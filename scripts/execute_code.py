@@ -42,6 +42,7 @@ def execute_python_file(file):
         # You can replace 'python:3.8' with the desired Python image/version
         # You can find available Python images on Docker Hub:
         # https://hub.docker.com/_/python
+        os.chdir('C:\\Users\\josep\\Auto-GPT')
         container = client.containers.run(
             image_name,
             f'python {file}',
